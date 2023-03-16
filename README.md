@@ -5,7 +5,7 @@ only.
 
 ## Screenshots
 
-![Screenshot](/madliblayout1.png)
+![Screenshot](/madliblayout2.png)
 
 ## Colour Pallette Used 
 
