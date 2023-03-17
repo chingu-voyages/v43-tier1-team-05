@@ -1,7 +1,6 @@
-# Layout Idea #2
+# Madlib Form Component
 
-Second idea for our Homepage layout. This is a plain mockup for visual effect
-only.
+Basic rendition of Madlib form component. 
 
 ## Screenshots
 
