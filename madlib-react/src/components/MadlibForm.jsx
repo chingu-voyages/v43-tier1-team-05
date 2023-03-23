@@ -27,6 +27,7 @@ const MadlibForm = ({
 				type="text"
 				name="noun"
 				placeholder="Noun"
+				value={noun}
 				onChange={(event) => getTextInput(event)}
 			/>
 
@@ -61,16 +62,5 @@ const MadlibForm = ({
 		</div>
 	);
 };
-
-/* 
-
-			<p style={style}>
-				On a space station orbiting a distant planet, there was a {adjective}{" "}
-				{noun} that loved to cook. It had {number} {bodypart}s and always
-				carried a {adjective} {food} with it, just in case it needed inspiration
-				for a new recipe.
-			</p>
-
-*/
 
 export default MadlibForm;

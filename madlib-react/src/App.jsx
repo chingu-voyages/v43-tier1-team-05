@@ -1,6 +1,8 @@
 import { useState } from "react";
 import MadlibForm from "./components/MadlibForm";
+import Modal from "./components/Modal";
 import "./App.css";
+import easy from "../../EasyStories";
 
 function App() {
 	const [text, setText] = useState({
@@ -11,6 +13,7 @@ function App() {
 		number: "",
 	});
 	const [active, setActive] = useState(false);
+	const [gameScreen, setGameScreen] = useState(false);
 
 	function getTextInput(event) {
 		// console.log(text);
@@ -30,23 +33,32 @@ function App() {
 
 	function getStory() {
 		setActive((prev) => !prev);
-		console.log(active);
+	}
+
+	function StartGameScreenButton() {
+		setGameScreen((prev) => !prev);
+		console.log(gameScreen);
 	}
 
 	return (
 		<div className="App">
-			<h1>Test+App</h1>
-			<p className="exclude">Testing the blur effect on story.</p>
-			<MadlibForm
-				active={active}
-				adjective={text.adjective}
-				noun={text.noun}
-				food={text.food}
-				bodyPart={text.bodyPart}
-				number={text.number}
-				getTextInput={getTextInput}
-			/>
-			<button onClick={() => getStory()}>Get story</button>
+			{!gameScreen && <Modal handleclickgamescreen={StartGameScreenButton} />}
+			{gameScreen && (
+				<>
+					{" "}
+					<MadlibForm
+						active={active}
+						adjective={text.adjective}
+						noun={text.noun}
+						food={text.food}
+						bodyPart={text.bodyPart}
+						number={text.number}
+						getTextInput={getTextInput}
+					/>
+					<button onClick={() => getStory()}>Get story</button>
+					<button onClick={() => StartGameScreenButton()}>New story!</button>
+				</>
+			)}
 		</div>
 	);
 }
