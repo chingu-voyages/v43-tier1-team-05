@@ -18,6 +18,7 @@ const Easy1 = ({
 
 	return (
 		<div className="story">
+			<h2>Story 1</h2>
 			<input
 				type="text"
 				name="adjective"

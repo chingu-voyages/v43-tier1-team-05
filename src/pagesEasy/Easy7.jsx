@@ -17,6 +17,7 @@ const Easy7 = ({
 
 	return (
 		<div className="story">
+			<h2>Story 7</h2>
 			<input
 				type="text"
 				name="name"
