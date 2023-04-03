@@ -1,17 +1,13 @@
 const easy = [
 	{
+		difficulty: "Easy",
 		story:
-			"In the <span>{adjective}</span> <span>{place}</span>, there was a magical <span>{adjective}</span> <span>{fruit}</span> that could <span>{verb} </span> <span>{number} </span> <span>{bodyPart}</span>s.",
+			"<span>{Name}</span> loved to explore the <span>{adjective}</span> <span>{place}</span> and one day discovered a <span>{noun}</span>. It was <span>{adverb}</span> <span>{adjective}</span> and loved to <span>{verb}</span>.",
 	},
 	{
 		difficulty: "Easy",
 		story:
-			"{Name} loved to explore the {adjective} {place} and one day discovered a {noun}. It was {adverb} {adjective} and loved to {verb}.",
-	},
-	{
-		difficulty: "Easy",
-		story:
-			"In a world full of {adjective} {animal}s, there was one that stood out. It loved to {verb} {adverb} and had {number} {body part}s. Its favorite {food} was {pun}.",
+			"In a world full of <span>{adjective}</span> <span>{animal}</span>s, there was one that stood out. It loved to <span>{verb} {adverb} and had {number} {body part}</span>s. Its favorite<span> {food}</span> was <span>{pun}</span>.",
 	},
 	{
 		difficulty: "Easy",
