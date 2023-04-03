@@ -87,7 +87,6 @@ function App() {
 
 	return (
 		<div className="App">
-			<h1>Working one</h1>
 			{!gameScreen && <Modal handleclickgamescreen={StartGameScreenButton} />}
 			{gameScreen && (
 				<>
