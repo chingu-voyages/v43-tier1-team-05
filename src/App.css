@@ -47,3 +47,21 @@ ul {
   list-style: lower-roman;
   text-align: left;
 }
+
+
+.story-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.story-box-links {
+  height: 200px;
+  flex: 2 1 200px;
+  /* flex-grow: 1; */
+  border: 2px solid black;
+  line-height: 200px;
+  text-align: center;
+  gap: 10px;
+}
