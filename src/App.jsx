@@ -2,7 +2,8 @@ import { useState } from "react";
 import MadlibForm from "./components/MadlibForm";
 import Modal from "./components/Modal";
 import "./App.css";
-import easy from "../../EasyStories";
+import Easy1 from "./pagesEasy/Easy1";
+import Easy2 from "./pagesEasy/Easy2";
 
 function App() {
 	const [text, setText] = useState({
@@ -11,13 +12,18 @@ function App() {
 		bodyPart: "",
 		food: "",
 		number: "",
+		colour: "",
+		animal: "",
+		year: "",
+		adverb: "",
+		verb: "",
 	});
 	const [active, setActive] = useState(false);
 	const [gameScreen, setGameScreen] = useState(false);
 
 	function getTextInput(event) {
-		// console.log(text);
 		const name = event.target.name;
+		console.log(event.target.value);
 		if (name === "adjective") {
 			setText((prev) => ({ ...prev, adjective: [event.target.value] }));
 		} else if (name === "noun") {
@@ -28,7 +34,16 @@ function App() {
 			setText((prev) => ({ ...prev, bodyPart: [event.target.value] }));
 		} else if (name === "number") {
 			setText((prev) => ({ ...prev, number: [event.target.value] }));
+		} else if (name === "colour") {
+			setText((prev) => ({ ...prev, colour: [event.target.value] }));
+		} else if (name === "animal") {
+			setText((prev) => ({ ...prev, animal: [event.target.value] }));
+		} else if (name === "year") {
+			setText((prev) => ({ ...prev, year: [event.target.value] }));
+		} else if (name === "adverb") {
+			setText((prev) => ({ ...prev, adverb: [event.target.value] }));
 		}
+		// verb conditional
 	}
 
 	function getStory() {
@@ -55,6 +70,17 @@ function App() {
 						number={text.number}
 						getTextInput={getTextInput}
 					/>
+					<Easy1
+						active={active}
+						adjective={text.adjective}
+						colour={text.colour}
+						food={text.food}
+						bodyPart={text.bodyPart}
+						number={text.number}
+						animal={text.animal}
+						getTextInput={getTextInput}
+					/>
+					<Easy2 />
 					<button onClick={() => getStory()}>Get story</button>
 					<button onClick={() => StartGameScreenButton()}>New story!</button>
 				</>
