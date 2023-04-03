@@ -13,6 +13,7 @@ import Easy8 from "./pagesEasy/Easy8";
 import Easy9 from "./pagesEasy/Easy9";
 import Easy10 from "./pagesEasy/Easy10";
 import Easy11 from "./pagesEasy/Easy11";
+import Easy12 from "./pagesEasy/Easy12";
 
 function App() {
 	const [text, setText] = useState({
@@ -207,6 +208,16 @@ function App() {
 						number={text.number}
 						bodyPart={text.bodyPart}
 						animal={text.animal}
+						getTextInput={getTextInput}
+					/>
+					<Easy12
+						active={active}
+						name={text.name}
+						verb={text.verb}
+						adjective={text.adjective}
+						place={text.place}
+						noun={text.noun}
+						adverb={text.adverb}
 						getTextInput={getTextInput}
 					/>
 					<button onClick={() => getStory()}>Get story</button>
