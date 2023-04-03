@@ -1,15 +1,13 @@
 import React from "react";
 import "../App.css";
 
-const Easy2 = ({
+const Easy3 = ({
+	place,
 	adjective,
-	food,
-	bodyPart,
-	number,
-	year,
 	noun,
-	adverb,
-	verb,
+	number,
+	bodyPart,
+	food,
 	getTextInput,
 	active,
 }) => {
@@ -28,15 +26,15 @@ const Easy2 = ({
 
 			<input
 				type="text"
-				name="year"
-				placeholder="Year"
+				name="place"
+				placeholder="Place"
 				onChange={(event) => getTextInput(event)}
 			/>
 
 			<input
 				type="text"
-				name="adverb"
-				placeholder="Adverb"
+				name="noun"
+				placeholder="Noun"
 				onChange={(event) => getTextInput(event)}
 			/>
 
@@ -61,29 +59,13 @@ const Easy2 = ({
 				onChange={(event) => getTextInput(event)}
 			/>
 
-			<input
-				type="text"
-				name="verb"
-				placeholder="Verb"
-				onChange={(event) => getTextInput(event)}
-			/>
-
-			<input
-				type="text"
-				name="noun"
-				placeholder="Noun"
-				onChange={(event) => getTextInput(event)}
-			/>
-
 			<p style={style}>
-				In the year<span> {year}</span>, a <span>{adjective}</span>{" "}
-				<span>{noun}</span> from the future arrived. It had{" "}
-				<span>{number}</span> <span>{bodyPart}</span>s and loved to eat
-				<span> {food}</span> that didnt exist yet. It was on a mission to{" "}
-				<span>{verb}</span> <span>{adverb}</span>.
+				In a faraway {place}, there was a {adjective} {noun} that loved to
+				explore the galaxy. It had {number} {bodyPart}s and always carried a{" "}
+				{adjective} {food} with it, just in case it got hungry..
 			</p>
 		</div>
 	);
 };
 
-export default Easy2;
+export default Easy3;

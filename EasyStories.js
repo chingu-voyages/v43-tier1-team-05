@@ -2,21 +2,6 @@ const easy = [
 	{
 		difficulty: "Easy",
 		story:
-			"On a space station orbiting a distant planet, there was a {adjective} {noun} that loved to cook. It had {number} {body part}s and always carried a {adjective} {food} with it, just in case it needed inspiration for a new recipe.",
-	},
-	{
-		difficulty: "Easy",
-		story:
-			"There was a {color} {animal} that loved to eat {food}. It lived in a {adjective} {place} and had {number} {body part}s. ",
-	},
-	{
-		difficulty: "Easy",
-		story:
-			"In the year {year}, a {adjective} {noun} from the future arrived. It had {number} {body part}s and loved to eat {food} that didnt exist yet. It was on a mission to {verb} {adverb}",
-	},
-	{
-		difficulty: "Easy",
-		story:
 			"In a faraway {place}, there was a {adjective} {noun} that loved to explore the galaxy. It had {number} {body part}s and always carried a {adjective} {food} with it, just in case it got hungry.",
 	},
 	{

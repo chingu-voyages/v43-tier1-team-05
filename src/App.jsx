@@ -4,6 +4,7 @@ import Modal from "./components/Modal";
 import "./App.css";
 import Easy1 from "./pagesEasy/Easy1";
 import Easy2 from "./pagesEasy/Easy2";
+import Easy3 from "./pagesEasy/Easy3";
 
 function App() {
 	const [text, setText] = useState({
@@ -80,7 +81,22 @@ function App() {
 						animal={text.animal}
 						getTextInput={getTextInput}
 					/>
-					<Easy2 />
+					<Easy2
+						year={text.year}
+						adjective={text.adjective}
+						number={text.number}
+						bodyPart={text.bodyPart}
+						food={text.food}
+						noun={text.noun}
+						verb={text.verb}
+						adverb={text.adverb}
+						getTextInput={getTextInput}
+					/>
+					<Easy3 
+					
+					
+					
+					/>
 					<button onClick={() => getStory()}>Get story</button>
 					<button onClick={() => StartGameScreenButton()}>New story!</button>
 				</>
