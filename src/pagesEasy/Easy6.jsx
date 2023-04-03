@@ -3,10 +3,11 @@ import "../App.css";
 
 const Easy6 = ({
 	adjective,
-	noun,
 	place,
+	fruit,
 	verb,
-	adverb,
+	number,
+	bodyPart,
 	getTextInput,
 	active,
 }) => {
@@ -25,15 +26,15 @@ const Easy6 = ({
 
 			<input
 				type="text"
-				name="noun"
-				placeholder="Noun"
+				name="place"
+				placeholder="Place"
 				onChange={(event) => getTextInput(event)}
 			/>
 
 			<input
 				type="text"
-				name="place"
-				placeholder="Place"
+				name="fruit"
+				placeholder="Fruit"
 				onChange={(event) => getTextInput(event)}
 			/>
 			<input
@@ -45,11 +46,19 @@ const Easy6 = ({
 
 			<input
 				type="text"
-				name="adverb"
-				placeholder="adverb"
+				name="number"
+				placeholder="Number"
 				onChange={(event) => getTextInput(event)}
 			/>
 
+			<input
+				type="text"
+				name="bodyPart"
+				placeholder="Body Part"
+				onChange={(event) => getTextInput(event)}
+				// heh -- please dont do this again, thanks, brain cells on their death. Rosebud moment right now. Care.
+			/>
+			{/* empty space -- lol / i wanna sleep so bad sweet Lord */}
 			<p style={style}>
 				In the <span>{adjective}</span> <span>{place}</span>, there was a
 				magical <span>{adjective}</span> <span>{fruit}</span> that could{" "}

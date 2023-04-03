@@ -7,6 +7,7 @@ import Easy2 from "./pagesEasy/Easy2";
 import Easy3 from "./pagesEasy/Easy3";
 import Easy4 from "./pagesEasy/Easy4";
 import Easy5 from "./pagesEasy/Easy5";
+import Easy6 from "./pagesEasy/Easy6";
 
 function App() {
 	const [text, setText] = useState({
@@ -21,6 +22,7 @@ function App() {
 		adverb: "",
 		verb: "",
 		place: "",
+		fruit: "",
 	});
 	const [active, setActive] = useState(false);
 	const [gameScreen, setGameScreen] = useState(false);
@@ -50,6 +52,8 @@ function App() {
 			setText((prev) => ({ ...prev, verb: [event.target.value] }));
 		} else if (name === "place") {
 			setText((prev) => ({ ...prev, place: [event.target.value] }));
+		} else if (name === "fruit") {
+			setText((prev) => ({ ...prev, fruit: [event.target.value] }));
 		}
 		// verb conditional
 	}
@@ -126,6 +130,17 @@ function App() {
 						place={text.place}
 						verb={text.verb}
 						adverb={text.adverb}
+						getTextInput={getTextInput}
+					/>
+					<Easy6
+						active={active}
+						adjective={text.adjective}
+						place={text.place}
+						fruit={text.fruit}
+						verb={text.verb}
+						number={text.number}
+						bodyPart={text.bodyPart}
+						// girlie stop forgetting to add the dang input handler freaking heck.
 						getTextInput={getTextInput}
 					/>
 					<button onClick={() => getStory()}>Get story</button>
