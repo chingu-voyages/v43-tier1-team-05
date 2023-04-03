@@ -1,0 +1,67 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Kumbh Sans";
+}
+
+.card {
+  padding: 2em;
+}
+
+.story {
+  width: 500px;
+}
+
+p {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+span {
+  color: green;
+  margin: 0 5px;
+  text-decoration: underline;
+  text-decoration-color: aqua;
+}
+
+.exclude {
+  color: #222;
+}
+
+input[type='text'] {
+  font-size: 18px;
+  height: 30px;
+  border-radius: 8px;
+  text-indent: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 3px .5px black;
+  margin: 5px;
+  font-family: "Kumbh Sans";
+}
+
+ul {
+  list-style: lower-roman;
+  text-align: left;
+}
+
+
+.story-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.story-box-links {
+  height: 200px;
+  flex: 2 1 200px;
+  /* flex-grow: 1; */
+  border: 2px solid black;
+  line-height: 200px;
+  text-align: center;
+  gap: 10px;
+}
