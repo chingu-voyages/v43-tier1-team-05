@@ -2,6 +2,11 @@ import { useState } from "react";
 import MadlibForm from "./components/MadlibForm";
 import Modal from "./components/Modal";
 import "./App.css";
+// Router import
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+//
+
+// Pages for all 12 Easy stories //
 import Easy1 from "./pagesEasy/Easy1";
 import Easy2 from "./pagesEasy/Easy2";
 import Easy3 from "./pagesEasy/Easy3";
@@ -14,6 +19,7 @@ import Easy9 from "./pagesEasy/Easy9";
 import Easy10 from "./pagesEasy/Easy10";
 import Easy11 from "./pagesEasy/Easy11";
 import Easy12 from "./pagesEasy/Easy12";
+//
 
 function App() {
 	const [text, setText] = useState({
