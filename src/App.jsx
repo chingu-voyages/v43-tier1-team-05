@@ -8,6 +8,8 @@ import Easy3 from "./pagesEasy/Easy3";
 import Easy4 from "./pagesEasy/Easy4";
 import Easy5 from "./pagesEasy/Easy5";
 import Easy6 from "./pagesEasy/Easy6";
+import Easy7 from "./pagesEasy/Easy7";
+import Easy8 from "./pagesEasy/Easy8";
 
 function App() {
 	const [text, setText] = useState({
@@ -23,6 +25,8 @@ function App() {
 		verb: "",
 		place: "",
 		fruit: "",
+		name: "",
+		pun: "",
 	});
 	const [active, setActive] = useState(false);
 	const [gameScreen, setGameScreen] = useState(false);
@@ -54,6 +58,10 @@ function App() {
 			setText((prev) => ({ ...prev, place: [event.target.value] }));
 		} else if (name === "fruit") {
 			setText((prev) => ({ ...prev, fruit: [event.target.value] }));
+		} else if (name === "name") {
+			setText((prev) => ({ ...prev, name: [event.target.value] }));
+		} else if (name === "pun") {
+			setText((prev) => ({ ...prev, pun: [event.target.value] }));
 		}
 		// verb conditional
 	}
@@ -141,6 +149,29 @@ function App() {
 						number={text.number}
 						bodyPart={text.bodyPart}
 						// girlie stop forgetting to add the dang input handler freaking heck.
+						getTextInput={getTextInput}
+					/>
+					<Easy7
+						active={active}
+						name={text.name}
+						adjective={text.adjective}
+						place={text.place}
+						noun={text.noun}
+						adverb={text.adverb}
+						verb={text.verb}
+						getTextInput={getTextInput}
+						// note to self; you just closed the link you silly goat; sleep, maybe? no reason to have closed that window at ALL.
+					/>
+					<Easy8
+						active={active}
+						adjective={text.adjective}
+						animal={text.animal}
+						verb={text.verb}
+						adverb={text.adverb}
+						number={text.number}
+						bodyPart={text.bodyPart}
+						food={text.food}
+						pun={text.pun}
 						getTextInput={getTextInput}
 					/>
 					<button onClick={() => getStory()}>Get story</button>
