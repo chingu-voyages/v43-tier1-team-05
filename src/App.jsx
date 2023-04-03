@@ -11,6 +11,8 @@ import Easy6 from "./pagesEasy/Easy6";
 import Easy7 from "./pagesEasy/Easy7";
 import Easy8 from "./pagesEasy/Easy8";
 import Easy9 from "./pagesEasy/Easy9";
+import Easy10 from "./pagesEasy/Easy10";
+import Easy11 from "./pagesEasy/Easy11";
 
 function App() {
 	const [text, setText] = useState({
@@ -184,6 +186,27 @@ function App() {
 						adverb={text.adverb}
 						number={text.number}
 						bodyPart={text.bodyPart}
+						getTextInput={getTextInput}
+					/>
+					<Easy10
+						active={active}
+						verb={text.verb}
+						adjective={text.adjective}
+						place={text.place}
+						name={text.name}
+						noun={text.noun}
+						adverb={text.adverb}
+						getTextInput={getTextInput}
+					/>
+					<Easy11
+						active={active}
+						name={text.name}
+						adjective={text.adjective}
+						verb={text.verb}
+						adverb={text.adverb}
+						number={text.number}
+						bodyPart={text.bodyPart}
+						animal={text.animal}
 						getTextInput={getTextInput}
 					/>
 					<button onClick={() => getStory()}>Get story</button>
