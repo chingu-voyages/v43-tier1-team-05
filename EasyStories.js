@@ -1,12 +1,7 @@
 const easy = [
 	{
-		difficulty: "Easy",
 		story:
-			"Once upon a time, there was a <span>{adjective}</span> <span>{noun}</span> that lived in a <span>{adjective}</span> <span>{place}</span>. One day, it <span>{verb}</span> <span>{adverb}</span> and became very <span>{adjective}</span>. ",
-	},
-	{
-		story:
-			"In the <span>{adjective}</span> <span>{place}</span>, there was a magical <span>{adjective}</span> <span>{fruit}</span> that could <span>{verb} </span> <span>{number} </span> <span>{bodyPart} </span>   s.",
+			"In the <span>{adjective}</span> <span>{place}</span>, there was a magical <span>{adjective}</span> <span>{fruit}</span> that could <span>{verb} </span> <span>{number} </span> <span>{bodyPart}</span>s.",
 	},
 	{
 		difficulty: "Easy",
