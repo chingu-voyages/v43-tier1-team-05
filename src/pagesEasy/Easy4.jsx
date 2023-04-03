@@ -1,13 +1,12 @@
 import React from "react";
 import "../App.css";
 
-const Easy3 = ({
-	place,
+const Easy4 = ({
 	adjective,
-	noun,
+	verb,
+	place,
 	number,
 	bodyPart,
-	food,
 	getTextInput,
 	active,
 }) => {
@@ -26,15 +25,15 @@ const Easy3 = ({
 
 			<input
 				type="text"
-				name="place"
-				placeholder="Place"
+				name="verb"
+				placeholder="Verb"
 				onChange={(event) => getTextInput(event)}
 			/>
 
 			<input
 				type="text"
-				name="noun"
-				placeholder="Noun"
+				name="place"
+				placeholder="Place"
 				onChange={(event) => getTextInput(event)}
 			/>
 
@@ -47,27 +46,19 @@ const Easy3 = ({
 
 			<input
 				type="text"
-				name="food"
-				placeholder="Food"
-				onChange={(event) => getTextInput(event)}
-			/>
-
-			<input
-				type="text"
 				name="bodyPart"
 				placeholder="Body Part"
 				onChange={(event) => getTextInput(event)}
 			/>
 
 			<p style={style}>
-				In a faraway <span>{place}</span>, there was a <span>{adjective}</span>{" "}
-				<span>{noun}</span> that loved to explore the galaxy. It had{" "}
-				<span>{number}</span> <span>{bodyPart}</span>s and always carried a{" "}
-				<span>{adjective}</span> <span>{food}</span> with it, just in case it
-				got hungry..
+				There was a <span>{adjective}</span> <span>{verb}</span>er that loved to{" "}
+				<span>{verb}</span>. It lived in a <span>{adjective}</span>{" "}
+				<span>{place}</span> and had<span> {number}</span>{" "}
+				<span>{bodyPart}</span>s.
 			</p>
 		</div>
 	);
 };
 
-export default Easy3;
+export default Easy4;

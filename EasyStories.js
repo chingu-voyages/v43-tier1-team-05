@@ -2,21 +2,11 @@ const easy = [
 	{
 		difficulty: "Easy",
 		story:
-			"In a faraway {place}, there was a {adjective} {noun} that loved to explore the galaxy. It had {number} {body part}s and always carried a {adjective} {food} with it, just in case it got hungry.",
-	},
-	{
-		difficulty: "Easy",
-		story:
-			"There was a {adjective} {verb}er that loved to {verb}. It lived in a {adjective} {place} and had {number} {body part}s.",
-	},
-	{
-		difficulty: "Easy",
-		story:
-			"Once upon a time, there was a {adjective} {noun} that lived in a {adjective} {place}. One day, it {verb} {adverb} and became very {adjective}. ",
+			"Once upon a time, there was a <span>{adjective}</span> <span>{noun}</span> that lived in a <span>{adjective}</span> <span>{place}</span>. One day, it <span>{verb}</span> <span>{adverb}</span> and became very <span>{adjective}</span>. ",
 	},
 	{
 		story:
-			"In the {adjective} {place}, there was a magical {adjective} {fruit} that could {verb} {number} {body part}s.",
+			"In the <span>{adjective}</span> <span>{place}</span>, there was a magical <span>{adjective}</span> <span>{fruit}</span> that could <span>{verb} </span> <span>{number} </span> <span>{bodyPart} </span>   s.",
 	},
 	{
 		difficulty: "Easy",

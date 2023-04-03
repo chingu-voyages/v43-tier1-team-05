@@ -1,13 +1,12 @@
 import React from "react";
 import "../App.css";
 
-const Easy3 = ({
-	place,
+const Easy5 = ({
 	adjective,
 	noun,
-	number,
-	bodyPart,
-	food,
+	place,
+	verb,
+	adverb,
 	getTextInput,
 	active,
 }) => {
@@ -26,13 +25,6 @@ const Easy3 = ({
 
 			<input
 				type="text"
-				name="place"
-				placeholder="Place"
-				onChange={(event) => getTextInput(event)}
-			/>
-
-			<input
-				type="text"
 				name="noun"
 				placeholder="Noun"
 				onChange={(event) => getTextInput(event)}
@@ -40,34 +32,32 @@ const Easy3 = ({
 
 			<input
 				type="text"
-				name="number"
-				placeholder="Number"
+				name="place"
+				placeholder="Place"
+				onChange={(event) => getTextInput(event)}
+			/>
+			<input
+				type="text"
+				name="verb"
+				placeholder="Verb"
 				onChange={(event) => getTextInput(event)}
 			/>
 
 			<input
 				type="text"
-				name="food"
-				placeholder="Food"
-				onChange={(event) => getTextInput(event)}
-			/>
-
-			<input
-				type="text"
-				name="bodyPart"
-				placeholder="Body Part"
+				name="adverb"
+				placeholder="adverb"
 				onChange={(event) => getTextInput(event)}
 			/>
 
 			<p style={style}>
-				In a faraway <span>{place}</span>, there was a <span>{adjective}</span>{" "}
-				<span>{noun}</span> that loved to explore the galaxy. It had{" "}
-				<span>{number}</span> <span>{bodyPart}</span>s and always carried a{" "}
-				<span>{adjective}</span> <span>{food}</span> with it, just in case it
-				got hungry..
+				Once upon a time, there was a <span>{adjective}</span>{" "}
+				<span>{noun}</span> that lived in a <span>{adjective}</span>{" "}
+				<span>{place}</span>. One day, it <span>{verb}</span>{" "}
+				<span>{adverb}</span> and became very <span>{adjective}</span>.
 			</p>
 		</div>
 	);
 };
 
-export default Easy3;
+export default Easy5;

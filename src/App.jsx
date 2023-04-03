@@ -5,6 +5,8 @@ import "./App.css";
 import Easy1 from "./pagesEasy/Easy1";
 import Easy2 from "./pagesEasy/Easy2";
 import Easy3 from "./pagesEasy/Easy3";
+import Easy4 from "./pagesEasy/Easy4";
+import Easy5 from "./pagesEasy/Easy5";
 
 function App() {
 	const [text, setText] = useState({
@@ -18,6 +20,7 @@ function App() {
 		year: "",
 		adverb: "",
 		verb: "",
+		place: "",
 	});
 	const [active, setActive] = useState(false);
 	const [gameScreen, setGameScreen] = useState(false);
@@ -43,6 +46,10 @@ function App() {
 			setText((prev) => ({ ...prev, year: [event.target.value] }));
 		} else if (name === "adverb") {
 			setText((prev) => ({ ...prev, adverb: [event.target.value] }));
+		} else if (name === "verb") {
+			setText((prev) => ({ ...prev, verb: [event.target.value] }));
+		} else if (name === "place") {
+			setText((prev) => ({ ...prev, place: [event.target.value] }));
 		}
 		// verb conditional
 	}
@@ -82,6 +89,7 @@ function App() {
 						getTextInput={getTextInput}
 					/>
 					<Easy2
+						active={active}
 						year={text.year}
 						adjective={text.adjective}
 						number={text.number}
@@ -92,10 +100,33 @@ function App() {
 						adverb={text.adverb}
 						getTextInput={getTextInput}
 					/>
-					<Easy3 
-					
-					
-					
+					<Easy3
+						active={active}
+						place={text.place}
+						adjective={text.adjective}
+						noun={text.noun}
+						number={text.number}
+						bodyPart={text.bodyPart}
+						food={text.food}
+						getTextInput={getTextInput}
+					/>
+					<Easy4
+						active={active}
+						adjective={text.adjective}
+						verb={text.verb}
+						place={text.place}
+						number={text.number}
+						bodyPart={text.bodyPart}
+						getTextInput={getTextInput}
+					/>
+					<Easy5
+						active={active}
+						adjective={text.adjective}
+						noun={text.noun}
+						place={text.place}
+						verb={text.verb}
+						adverb={text.adverb}
+						getTextInput={getTextInput}
 					/>
 					<button onClick={() => getStory()}>Get story</button>
 					<button onClick={() => StartGameScreenButton()}>New story!</button>
