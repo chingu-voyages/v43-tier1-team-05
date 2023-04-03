@@ -82,6 +82,24 @@ function App() {
 
 	function StartGameScreenButton() {
 		setGameScreen((prev) => !prev);
+		setActive(false);
+		console.log(`form text from game btn`, text);
+		setText({
+			adjective: "",
+			noun: "",
+			bodyPart: "",
+			food: "",
+			number: "",
+			colour: "",
+			animal: "",
+			year: "",
+			adverb: "",
+			verb: "",
+			place: "",
+			fruit: "",
+			name: "",
+			pun: "",
+		});
 		console.log(gameScreen);
 	}
 
@@ -385,7 +403,10 @@ function App() {
 						/>
 					</Routes>
 					<button onClick={() => getStory()}>Get story</button>
-					<button onClick={() => StartGameScreenButton()}>New story!</button>
+					<button onClick={() => StartGameScreenButton()}>
+						{" "}
+						<Link to="/">New Story!</Link>{" "}
+					</button>
 				</>
 			)}
 		</div>
