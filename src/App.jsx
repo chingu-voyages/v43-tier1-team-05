@@ -19,6 +19,8 @@ import Easy9 from "./pagesEasy/Easy9";
 import Easy10 from "./pagesEasy/Easy10";
 import Easy11 from "./pagesEasy/Easy11";
 import Easy12 from "./pagesEasy/Easy12";
+import StoryNavEasy from "./components/StoryNavEasy";
+// import Nav from "./components/Nav";
 //
 
 function App() {
@@ -109,109 +111,17 @@ function App() {
 			{gameScreen && (
 				<>
 					{" "}
-					{/* <nav>
-						<ul className="story-list">
-							<li className="story-box-links">
-								<Link to="/easyStory1">Story 1</Link>
-							</li>
-							<li className="story-box-links">
-								<Link to="/easyStory2">Story 2</Link>
-							</li>
-							<li className="story-box-links">
-								<Link to="/easyStory3">Story 3</Link>
-							</li>
-							<li className="story-box-links">
-								<Link to="/easyStory4">Story 4</Link>
-							</li>
-							<li className="story-box-links">
-								<Link to="/easyStory5">Story 5 </Link>
-							</li>
-							<li className="story-box-links">
-								<Link to="/easyStory6">Story 6</Link>
-							</li>
-							<li className="story-box-links">
-								<Link to="/easyStory7">Story 7</Link>
-							</li>
-							<li className="story-box-links">
-								<Link to="/easyStory8">Story 8</Link>
-							</li>
-							<li className="story-box-links">
-								<Link to="/easyStory9">Story 9</Link>
-							</li>
-							<li className="story-box-links">
-								<Link to="/easyStory10">Story 10</Link>
-							</li>
-							<li className="story-box-links">
-								<Link to="/easyStory11">Story 11</Link>
-							</li>
-							<li className="story-box-links">
-								<Link to="/easyStory12">Story 12</Link>
-							</li>
-							<li className="story-box-links">
-								<Link to="madlib">Madlib Form</Link>
-							</li>
-						</ul>
-					</nav> */}
 					<Routes>
 						<Route
-							path="/"
-							element={
-								<nav>
-									<ul className="story-list">
-										<li className="story-box-links">
-											<Link to="/easyStory1">Story 1</Link>
-										</li>
-										<li className="story-box-links">
-											<Link to="/easyStory2">Story 2</Link>
-										</li>
-										<li className="story-box-links">
-											<Link to="/easyStory3">Story 3</Link>
-										</li>
-										<li className="story-box-links">
-											<Link to="/easyStory4">Story 4</Link>
-										</li>
-										<li className="story-box-links">
-											<Link to="/easyStory5">Story 5 </Link>
-										</li>
-										<li className="story-box-links">
-											<Link to="/easyStory6">Story 6</Link>
-										</li>
-										<li className="story-box-links">
-											<Link to="/easyStory7">Story 7</Link>
-										</li>
-										<li className="story-box-links">
-											<Link to="/easyStory8">Story 8</Link>
-										</li>
-										<li className="story-box-links">
-											<Link to="/easyStory9">Story 9</Link>
-										</li>
-										<li className="story-box-links">
-											<Link to="/easyStory10">Story 10</Link>
-										</li>
-										<li className="story-box-links">
-											<Link to="/easyStory11">Story 11</Link>
-										</li>
-										<li className="story-box-links">
-											<Link to="/easyStory12">Story 12</Link>
-										</li>
-										<li className="story-box-links">
-											<Link to="madlib">Madlib Form</Link>
-										</li>
-									</ul>
-								</nav>
-							}
+							path="/stories"
+							element={<StoryNavEasy />}
 						/>
 						<Route
 							path="/easyStory1"
 							element={
 								<Easy1
 									active={active}
-									adjective={text.adjective}
-									colour={text.colour}
-									food={text.food}
-									bodyPart={text.bodyPart}
-									number={text.number}
-									animal={text.animal}
+									{...text}
 									getTextInput={getTextInput}
 								/>
 							}
@@ -221,14 +131,7 @@ function App() {
 							element={
 								<Easy2
 									active={active}
-									year={text.year}
-									adjective={text.adjective}
-									number={text.number}
-									bodyPart={text.bodyPart}
-									food={text.food}
-									noun={text.noun}
-									verb={text.verb}
-									adverb={text.adverb}
+									{...text}
 									getTextInput={getTextInput}
 								/>
 							}
@@ -238,12 +141,7 @@ function App() {
 							element={
 								<Easy3
 									active={active}
-									place={text.place}
-									adjective={text.adjective}
-									noun={text.noun}
-									number={text.number}
-									bodyPart={text.bodyPart}
-									food={text.food}
+									{...text}
 									getTextInput={getTextInput}
 								/>
 							}
@@ -252,12 +150,8 @@ function App() {
 							path="easyStory4"
 							element={
 								<Easy4
+									{...text}
 									active={active}
-									adjective={text.adjective}
-									verb={text.verb}
-									place={text.place}
-									number={text.number}
-									bodyPart={text.bodyPart}
 									getTextInput={getTextInput}
 								/>
 							}
@@ -267,11 +161,7 @@ function App() {
 							element={
 								<Easy5
 									active={active}
-									adjective={text.adjective}
-									noun={text.noun}
-									place={text.place}
-									verb={text.verb}
-									adverb={text.adverb}
+									{...text}
 									getTextInput={getTextInput}
 								/>
 							}
@@ -281,12 +171,7 @@ function App() {
 							element={
 								<Easy6
 									active={active}
-									adjective={text.adjective}
-									place={text.place}
-									fruit={text.fruit}
-									verb={text.verb}
-									number={text.number}
-									bodyPart={text.bodyPart}
+									{...text}
 									// girlie stop forgetting to add the dang input handler freaking heck.
 									getTextInput={getTextInput}
 								/>
@@ -297,12 +182,7 @@ function App() {
 							element={
 								<Easy7
 									active={active}
-									name={text.name}
-									adjective={text.adjective}
-									place={text.place}
-									noun={text.noun}
-									adverb={text.adverb}
-									verb={text.verb}
+									{...text}
 									getTextInput={getTextInput}
 									// note to self; you just closed the link you silly goat; sleep, maybe? no reason to have closed that window at ALL.
 								/>
@@ -313,14 +193,7 @@ function App() {
 							element={
 								<Easy8
 									active={active}
-									adjective={text.adjective}
-									animal={text.animal}
-									verb={text.verb}
-									adverb={text.adverb}
-									number={text.number}
-									bodyPart={text.bodyPart}
-									food={text.food}
-									pun={text.pun}
+									{...text}
 									getTextInput={getTextInput}
 								/>
 							}
@@ -330,13 +203,7 @@ function App() {
 							element={
 								<Easy9
 									active={active}
-									adjective={text.adjective}
-									place={text.place}
-									noun={text.noun}
-									verb={text.verb}
-									adverb={text.adverb}
-									number={text.number}
-									bodyPart={text.bodyPart}
+									{...text}
 									getTextInput={getTextInput}
 								/>
 							}
@@ -346,12 +213,7 @@ function App() {
 							element={
 								<Easy10
 									active={active}
-									verb={text.verb}
-									adjective={text.adjective}
-									place={text.place}
-									name={text.name}
-									noun={text.noun}
-									adverb={text.adverb}
+									{...text}
 									getTextInput={getTextInput}
 								/>
 							}
@@ -361,13 +223,7 @@ function App() {
 							element={
 								<Easy11
 									active={active}
-									name={text.name}
-									adjective={text.adjective}
-									verb={text.verb}
-									adverb={text.adverb}
-									number={text.number}
-									bodyPart={text.bodyPart}
-									animal={text.animal}
+									{...text}
 									getTextInput={getTextInput}
 								/>
 							}
@@ -377,12 +233,7 @@ function App() {
 							element={
 								<Easy12
 									active={active}
-									name={text.name}
-									verb={text.verb}
-									adjective={text.adjective}
-									place={text.place}
-									noun={text.noun}
-									adverb={text.adverb}
+									{...text}
 									getTextInput={getTextInput}
 								/>
 							}
@@ -392,20 +243,18 @@ function App() {
 							element={
 								<MadlibForm
 									active={active}
-									adjective={text.adjective}
-									noun={text.noun}
-									food={text.food}
-									bodyPart={text.bodyPart}
-									number={text.number}
+									{...text}
 									getTextInput={getTextInput}
 								/>
 							}
 						/>
 					</Routes>
 					<button onClick={() => getStory()}>Get story</button>
-					<button onClick={() => StartGameScreenButton()}>
+					<button
+					// onClick={() => StartGameScreenButton()}
+					>
 						{" "}
-						<Link to="/">New Story!</Link>{" "}
+						<Link to="/stories">New Story!</Link>{" "}
 					</button>
 				</>
 			)}

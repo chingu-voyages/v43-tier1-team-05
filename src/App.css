@@ -59,9 +59,30 @@ ul {
 .story-box-links {
   height: 200px;
   flex: 2 1 200px;
-  /* flex-grow: 1; */
-  border: 2px solid black;
+  font-size: 1.2rem;
+  /* border: 2px solid black; */
   line-height: 200px;
   text-align: center;
-  gap: 10px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+/* Temp colours */
+
+.story-box-links:nth-of-type(2n+1) {
+  flex-basis: 400px;
+  background: plum;
+}
+
+.story-box-links:nth-of-type(2n) {
+  background: goldenrod;
+}
+
+.story-box-links:nth-last-of-type(3n +1) {
+  flex-basis: 150px;
+  background: greenyellow;
+}
+
+.story-box-links:nth-of-type(6n) {
+  background: aquamarine;
 }

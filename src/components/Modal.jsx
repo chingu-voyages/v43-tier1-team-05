@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 function Modal({ handleclickgamescreen }) {
@@ -13,7 +14,9 @@ function Modal({ handleclickgamescreen }) {
 					<li>No losers...all winners!!</li>
 				</ul>
 			</>
-			<button onClick={() => handleclickgamescreen()}>Get Started</button>
+			<button onClick={() => handleclickgamescreen()}>
+				<Link to="/stories">Go to stories page!</Link>
+			</button>
 		</div>
 	);
 }

@@ -16,7 +16,7 @@ const MadlibForm = ({
 
 	return (
 		<div className="story">
-			<h2>Madlib</h2>
+			<h2>Story 13</h2>
 			<input
 				type="text"
 				name="adjective"
