@@ -44,7 +44,6 @@ function App() {
 
 	function getTextInput(event) {
 		const name = event.target.name;
-		console.log(event.target.value);
 		if (name === "adjective") {
 			setText((prev) => ({ ...prev, adjective: [event.target.value] }));
 		} else if (name === "noun") {
@@ -77,14 +76,8 @@ function App() {
 		// verb conditional
 	}
 
-	function getStory() {
-		setActive((prev) => !prev);
-	}
-
-	function StartGameScreenButton() {
-		setGameScreen((prev) => !prev);
+	function resetForm() {
 		setActive(false);
-		console.log(`form text from game btn`, text);
 		setText({
 			adjective: "",
 			noun: "",
@@ -101,7 +94,31 @@ function App() {
 			name: "",
 			pun: "",
 		});
-		console.log(gameScreen);
+	}
+
+	function getStory() {
+		setActive((prev) => !prev);
+	}
+
+	function StartGameScreenButton() {
+		setGameScreen((prev) => !prev);
+		setActive(false);
+		setText({
+			adjective: "",
+			noun: "",
+			bodyPart: "",
+			food: "",
+			number: "",
+			colour: "",
+			animal: "",
+			year: "",
+			adverb: "",
+			verb: "",
+			place: "",
+			fruit: "",
+			name: "",
+			pun: "",
+		});
 	}
 
 	return (
@@ -249,9 +266,7 @@ function App() {
 						/>
 					</Routes>
 					<button onClick={() => getStory()}>Get story</button>
-					<button
-					// onClick={() => StartGameScreenButton()}
-					>
+					<button onClick={() => resetForm()}>
 						{" "}
 						<Link to="/stories">New Story!</Link>{" "}
 					</button>
