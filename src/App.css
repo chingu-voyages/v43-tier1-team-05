@@ -4,9 +4,7 @@
   padding: 2rem;
   font-size: 18px;
   text-align: center;
-  font-family: "Kumbh Sans";
-  /* font-family: 'DM Mono', monospace;
-  font-family: 'Permanent Marker', cursive; */
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 body {
@@ -19,10 +17,10 @@ body {
 
 .story {
   width: 500px;
-  font-size: 1.1rem;
 }
 
 p {
+  font-size: 1.1rem;
   color: transparent;
   font-family: 'DM Mono', monospace;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -32,7 +30,7 @@ span {
   color: rgb(128, 26, 0);
   margin: 0 5px;
   font-size: 1.2rem;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Kumbh Sans', sans-serif;
   letter-spacing: 2px;
   text-decoration: underline wavy aqua 2px;
 }
@@ -42,7 +40,7 @@ span {
 }
 
 input[type='text'] {
-  font-size: 1rem;
+  font-size: .90rem;
   height: 30px;
   border-radius: 8px;
   text-indent: 20px;

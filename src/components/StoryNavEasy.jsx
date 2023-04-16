@@ -42,9 +42,6 @@ function StoryNavEasy() {
 					<li className="story-box-links">
 						<Link to="/easyStory12">Story 12</Link>
 					</li>
-					<li className="story-box-links">
-						<Link to="madlib">Story 13</Link>
-					</li>
 				</ul>
 			</nav>
 		</>

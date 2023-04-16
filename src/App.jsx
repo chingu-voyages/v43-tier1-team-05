@@ -20,7 +20,7 @@ import Easy10 from "./pagesEasy/Easy10";
 import Easy11 from "./pagesEasy/Easy11";
 import Easy12 from "./pagesEasy/Easy12";
 import StoryNavEasy from "./components/StoryNavEasy";
-//
+// Time need  + time doesn't have = this is it.
 
 function App() {
 	const [text, setText] = useState({
