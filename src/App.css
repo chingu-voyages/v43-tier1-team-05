@@ -569,7 +569,6 @@ p+button+button {
 
 .main-nav-fixed ul {
   display: flex;
-  border: 2px solid red;
   justify-content: space-around;
   list-style-type: none;
   padding-left: 0;
@@ -585,10 +584,6 @@ p+button+button {
 .dark {
   background: #222;
   color: aliceblue;
-}
-
-footer {
-  margin-top: 40px;
 }
 
 @media (max-width: 336px) {
