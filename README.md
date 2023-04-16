@@ -9,6 +9,8 @@ to enhance user experience.
 - 12 fun stories
 - 5 user input options minimum
 - Light and dark mode toggle
+- Responsive design
+- Clean interface
 
 ## Contributors
 
