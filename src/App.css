@@ -279,6 +279,10 @@
     color: #a294af;
   }
 
+  .card {
+    padding: 2em;
+  }
+
 @media (max-width: 1270px) {
   .Main-section {
     padding: 0 20%;
@@ -326,6 +330,25 @@
     font-size: 1.1rem;
   }
 
+
+.story-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
+}
+
+
+.story-box-links {
+  height: 200px;
+  flex: 2 1 200px;
+  font-size: 1.5rem;
+  line-height: 200px;
+  text-align: center;
+  margin: 1px;
+}
+
   .Main-section .ul-main{
     font-size: 0.9rem;
     margin-bottom: 2rem;
@@ -334,6 +357,7 @@
   .Chingu-links, .Team-links {
     flex-wrap: wrap;
   }
+
 
   .Chingu-links > *, .Team-links > * {
     margin: 0.3em 1em;
@@ -533,6 +557,40 @@
   }
 }
 
+
+p+button,
+p+button+button {
+  margin: 0 10px;
+  color: #222;
+  font-weight: 700;
+}
+
+/* Main fixed nav */
+
+.main-nav-fixed ul {
+  display: flex;
+  border: 2px solid red;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Dark mode -- no idea how lol*/
+
+.light {
+  background: #222;
+  color: #f0f8ff;
+}
+
+.dark {
+  background: #222;
+  color: aliceblue;
+}
+
+footer {
+  margin-top: 40px;
+}
+
 @media (max-width: 336px) {
   .item-a {
     grid-column-start: 1;
@@ -658,3 +716,4 @@
     font-size: 0.5em;
   }
 }
+
