@@ -108,6 +108,10 @@ function App() {
 					{" "}
 					<Routes>
 						<Route
+							path="/"
+							element={<Modal />}
+						/>
+						<Route
 							path="/stories"
 							element={<StoryNavEasy />}
 						/>
