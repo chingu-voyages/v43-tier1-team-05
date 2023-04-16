@@ -259,6 +259,7 @@
   .Chingu-links > *, .Team-links > * {
     margin: 0.3em 2em;
     font-size: 1em;
+    color: rgb(251, 251, 238);
   }
   
   .Footer-icon:hover {
