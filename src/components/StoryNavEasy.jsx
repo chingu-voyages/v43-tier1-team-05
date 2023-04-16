@@ -7,10 +7,20 @@ function StoryNavEasy() {
 			<div className="stories-menu">
 				<div className="stories-links">
 					<div className="home-link">
-						<Link className="nav-link" to="/easyStory1">Home</Link>
+						<Link
+							className="nav-link"
+							to="/"
+						>
+							Home
+						</Link>
 					</div>
 					<div className="stories-link">
-						<Link className="nav-link" to="/easyStory1">Stories</Link>
+						<Link
+							className="nav-link"
+							to="/stories"
+						>
+							Stories
+						</Link>
 					</div>
 				</div>
 			</div>
