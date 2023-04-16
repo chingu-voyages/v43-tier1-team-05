@@ -7,7 +7,6 @@
   font-family: 'Kumbh Sans', sans-serif;
 }
 
-
 .card {
   padding: 2em;
 }
@@ -59,7 +58,9 @@ ul {
   flex-wrap: wrap;
   justify-content: space-around;
   list-style: none;
+  padding-left: 0;
 }
+
 
 .story-box-links {
   height: 200px;
@@ -95,4 +96,30 @@ p+button+button {
   margin: 0 10px;
   color: #222;
   font-weight: 700;
+}
+
+/* Main fixed nav */
+
+.main-nav-fixed ul {
+  display: flex;
+  border: 2px solid red;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Dark mode -- no idea how lol*/
+
+.light {
+  background: #222;
+  color: #f0f8ff;
+}
+
+.dark {
+  background: #222;
+  color: aliceblue;
+}
+
+footer {
+  margin-top: 40px;
 }
