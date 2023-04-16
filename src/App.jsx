@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import MadlibForm from "./components/MadlibForm";
 import Modal from "./components/Modal";
+import Header from "./Header";
+import Footer from "./Footer";
 import "./App.css";
 // Router import
 import { Route, Routes, Link, useLocation } from "react-router-dom";
@@ -99,6 +101,7 @@ function App() {
 
 	return (
 		<div className="App">
+			<Header />
 			{!gameScreen && <Modal handleclickgamescreen={StartGameScreenButton} />}
 			{gameScreen && (
 				<>
@@ -176,7 +179,6 @@ function App() {
 									resetForm={resetForm}
 									active={active}
 									{...text}
-									// girlie stop forgetting to add the dang input handler freaking heck.
 									getTextInput={getTextInput}
 								/>
 							}
@@ -190,7 +192,6 @@ function App() {
 									active={active}
 									{...text}
 									getTextInput={getTextInput}
-									// note to self; you just closed the link you silly goat; sleep, maybe? no reason to have closed that window at ALL.
 								/>
 							}
 						/>
@@ -274,6 +275,7 @@ function App() {
 					</button> */}
 				</>
 			)}
+			<Footer />
 		</div>
 	);
 }

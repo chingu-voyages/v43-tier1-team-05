@@ -53,7 +53,7 @@ const MadlibForm = ({
 				onChange={(event) => getTextInput(event)}
 			/>
 
-			<p style={style}>
+			<p className="story-text" style={style}>
 				On a space station orbiting a distant planet, there was a{" "}
 				<span>{adjective}</span> <span>{noun}</span> that loved to cook. It had{" "}
 				<span>{number}</span> <span>{bodyPart}</span>s and always carried a{" "}
