@@ -148,6 +148,8 @@ function App() {
 							path="easyStory2"
 							element={
 								<Easy2
+									getStory={getStory}
+									resetForm={resetForm}
 									active={active}
 									{...text}
 									getTextInput={getTextInput}
@@ -158,6 +160,8 @@ function App() {
 							path="easyStory3"
 							element={
 								<Easy3
+									getStory={getStory}
+									resetForm={resetForm}
 									active={active}
 									{...text}
 									getTextInput={getTextInput}
@@ -168,6 +172,8 @@ function App() {
 							path="easyStory4"
 							element={
 								<Easy4
+									getStory={getStory}
+									resetForm={resetForm}
 									{...text}
 									active={active}
 									getTextInput={getTextInput}
@@ -178,6 +184,8 @@ function App() {
 							path="easyStory5"
 							element={
 								<Easy5
+									getStory={getStory}
+									resetForm={resetForm}
 									active={active}
 									{...text}
 									getTextInput={getTextInput}
@@ -188,6 +196,8 @@ function App() {
 							path="easyStory6"
 							element={
 								<Easy6
+									getStory={getStory}
+									resetForm={resetForm}
 									active={active}
 									{...text}
 									// girlie stop forgetting to add the dang input handler freaking heck.
@@ -199,6 +209,8 @@ function App() {
 							path="easyStory7"
 							element={
 								<Easy7
+									getStory={getStory}
+									resetForm={resetForm}
 									active={active}
 									{...text}
 									getTextInput={getTextInput}
@@ -210,6 +222,8 @@ function App() {
 							path="easyStory8"
 							element={
 								<Easy8
+									getStory={getStory}
+									resetForm={resetForm}
 									active={active}
 									{...text}
 									getTextInput={getTextInput}
@@ -220,6 +234,8 @@ function App() {
 							path="easyStory9"
 							element={
 								<Easy9
+									getStory={getStory}
+									resetForm={resetForm}
 									active={active}
 									{...text}
 									getTextInput={getTextInput}
@@ -230,6 +246,8 @@ function App() {
 							path="easyStory10"
 							element={
 								<Easy10
+									getStory={getStory}
+									resetForm={resetForm}
 									active={active}
 									{...text}
 									getTextInput={getTextInput}
@@ -240,6 +258,8 @@ function App() {
 							path="easyStory11"
 							element={
 								<Easy11
+									getStory={getStory}
+									resetForm={resetForm}
 									active={active}
 									{...text}
 									getTextInput={getTextInput}
@@ -250,6 +270,8 @@ function App() {
 							path="easyStory12"
 							element={
 								<Easy12
+									getStory={getStory}
+									resetForm={resetForm}
 									active={active}
 									{...text}
 									getTextInput={getTextInput}
@@ -260,6 +282,8 @@ function App() {
 							path="madlib"
 							element={
 								<MadlibForm
+									getStory={getStory}
+									resetForm={resetForm}
 									active={active}
 									{...text}
 									getTextInput={getTextInput}

@@ -67,6 +67,11 @@ const Easy3 = ({
 				<span>{adjective}</span> <span>{food}</span> with it, just in case it
 				got hungry..
 			</p>
+			<button onClick={() => getStory()}>Get story</button>
+			<button onClick={() => resetForm()}>
+				{" "}
+				<Link to="/stories">New Story!</Link>{" "}
+			</button>
 		</div>
 	);
 };

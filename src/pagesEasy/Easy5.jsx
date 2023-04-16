@@ -57,6 +57,11 @@ const Easy5 = ({
 				<span>{place}</span>. One day, it <span>{verb}</span>{" "}
 				<span>{adverb}</span> and became very <span>{adjective}</span>.
 			</p>
+			<button onClick={() => getStory()}>Get story</button>
+			<button onClick={() => resetForm()}>
+				{" "}
+				<Link to="/stories">New Story!</Link>{" "}
+			</button>
 		</div>
 	);
 };

@@ -65,6 +65,11 @@ const Easy7 = ({
 				was <span>{adverb}</span> <span>{adjective}</span> and loved to{" "}
 				<span>{verb}</span>.",
 			</p>
+			<button onClick={() => getStory()}>Get story</button>
+			<button onClick={() => resetForm()}>
+				{" "}
+				<Link to="/stories">New Story!</Link>{" "}
+			</button>
 		</div>
 	);
 };

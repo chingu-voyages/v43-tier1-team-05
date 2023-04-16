@@ -58,6 +58,11 @@ const Easy4 = ({
 				<span>{place}</span> and had<span> {number}</span>{" "}
 				<span>{bodyPart}</span>s.
 			</p>
+			<button onClick={() => getStory()}>Get story</button>
+			<button onClick={() => resetForm()}>
+				{" "}
+				<Link to="/stories">New Story!</Link>{" "}
+			</button>
 		</div>
 	);
 };

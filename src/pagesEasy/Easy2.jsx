@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const Easy2 = ({
 	adjective,
@@ -12,6 +13,8 @@ const Easy2 = ({
 	verb,
 	getTextInput,
 	active,
+	getStory,
+	resetForm,
 }) => {
 	const style = {
 		color: active ? "black" : "transparent",
@@ -26,56 +29,48 @@ const Easy2 = ({
 				placeholder="Adjective"
 				onChange={(event) => getTextInput(event)}
 			/>
-
 			<input
 				type="text"
 				name="year"
 				placeholder="Year"
 				onChange={(event) => getTextInput(event)}
 			/>
-
 			<input
 				type="text"
 				name="adverb"
 				placeholder="Adverb"
 				onChange={(event) => getTextInput(event)}
 			/>
-
 			<input
 				type="text"
 				name="number"
 				placeholder="Number"
 				onChange={(event) => getTextInput(event)}
 			/>
-
 			<input
 				type="text"
 				name="food"
 				placeholder="Food"
 				onChange={(event) => getTextInput(event)}
 			/>
-
 			<input
 				type="text"
 				name="bodyPart"
 				placeholder="Body Part"
 				onChange={(event) => getTextInput(event)}
 			/>
-
 			<input
 				type="text"
 				name="verb"
 				placeholder="Verb"
 				onChange={(event) => getTextInput(event)}
 			/>
-
 			<input
 				type="text"
 				name="noun"
 				placeholder="Noun"
 				onChange={(event) => getTextInput(event)}
 			/>
-
 			<p style={style}>
 				In the year<span> {year}</span>, a <span>{adjective}</span>{" "}
 				<span>{noun}</span> from the future arrived. It had{" "}
@@ -83,6 +78,11 @@ const Easy2 = ({
 				<span> {food}</span> that didnt exist yet. It was on a mission to{" "}
 				<span>{verb}</span> <span>{adverb}</span>.
 			</p>
+			<button onClick={(event) => getStory(event)}>Get story</button>
+			<button onClick={(event) => resetForm(event)}>
+				{" "}
+				<Link to="/stories">New Story!</Link>{" "}
+			</button>
 		</div>
 	);
 };
