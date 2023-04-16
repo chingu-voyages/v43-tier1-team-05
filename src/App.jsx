@@ -1,6 +1,8 @@
 import { useState } from "react";
 import MadlibForm from "./components/MadlibForm";
 import Modal from "./components/Modal";
+import Header from "./Header";
+import Footer from "./Footer";
 import "./App.css";
 // Router import
 import { Route, Routes, Link } from "react-router-dom";
@@ -123,6 +125,7 @@ function App() {
 
 	return (
 		<div className="App">
+			<Header />
 			{!gameScreen && <Modal handleclickgamescreen={StartGameScreenButton} />}
 			{gameScreen && (
 				<>
@@ -298,6 +301,7 @@ function App() {
 					</button> */}
 				</>
 			)}
+			<Footer /> 
 		</div>
 	);
 }
