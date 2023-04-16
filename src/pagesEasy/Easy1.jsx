@@ -18,7 +18,7 @@ const Easy1 = ({
 	resetForm,
 }) => {
 	const style = {
-		color: active ? "black" : "transparent",
+		color: active ? "#333456" : "transparent",
 	};
 
 	return (
