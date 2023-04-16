@@ -136,6 +136,8 @@ function App() {
 							path="/easyStory1"
 							element={
 								<Easy1
+									getStory={getStory}
+									resetForm={resetForm}
 									active={active}
 									{...text}
 									getTextInput={getTextInput}
@@ -265,11 +267,11 @@ function App() {
 							}
 						/>
 					</Routes>
-					<button onClick={() => getStory()}>Get story</button>
+					{/* <button onClick={() => getStory()}>Get story</button>
 					<button onClick={() => resetForm()}>
 						{" "}
 						<Link to="/stories">New Story!</Link>{" "}
-					</button>
+					</button> */}
 				</>
 			)}
 		</div>
