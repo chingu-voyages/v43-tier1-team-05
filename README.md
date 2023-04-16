@@ -12,9 +12,9 @@ to enhance user experience.
 - Responsive design
 - Clean interface
 
-## Contributors
+## Team
 
-Special thanks to the following contributors for their support:
+Special thanks to the following team members for their contributions:
 
 - Inna
 - Lucy
