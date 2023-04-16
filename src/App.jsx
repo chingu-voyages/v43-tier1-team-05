@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MadlibForm from "./components/MadlibForm";
 import Modal from "./components/Modal";
 import "./App.css";
 // Router import
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes, Link, useLocation } from "react-router-dom";
 //
 
 // Pages for all 12 Easy stories //
@@ -42,19 +42,10 @@ function App() {
 	const [active, setActive] = useState(false);
 	const [gameScreen, setGameScreen] = useState(false);
 
-	let swear = [
-		"arse",
-		"ass",
-		"asshole",
-		"bastard",
-		"bitch",
-		"bollocks",
-		"bugger",
-		"bullshit",
-		"crap",
-		"damn",
-		"frigger",
-	];
+	let location = useLocation();
+	useEffect(() => {
+		resetForm();
+	}, [location]);
 
 	function getTextInput(event) {
 		const { name, value } = event.target;
