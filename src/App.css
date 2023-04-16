@@ -97,5 +97,6 @@ ul {
 p+button,
 p+button+button {
   margin: 0 10px;
-  background: rgb(121, 67, 121);
+  color: #222;
+  font-weight: 700;
 }
