@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 OriginalApp.jsx
+pageMedium
 dist
 dist-ssr
 *.local
