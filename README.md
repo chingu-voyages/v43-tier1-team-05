@@ -14,7 +14,7 @@ to enhance user experience.
 
 ## Team
 
-Special thanks to the following team members for their contributions:
+Huge thanks to the following team members for their contributions:
 
 - Inna
 - Lucy
