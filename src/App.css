@@ -7,6 +7,10 @@
   font-family: "Kumbh Sans";
 }
 
+body {
+  background-color: rgba(136, 127, 169, 0.626);
+}
+
 .card {
   padding: 2em;
 }
@@ -60,7 +64,6 @@ ul {
   height: 200px;
   flex: 2 1 200px;
   font-size: 1.2rem;
-  /* border: 2px solid black; */
   line-height: 200px;
   text-align: center;
   margin: 2px;
@@ -71,7 +74,7 @@ ul {
 
 .story-box-links:nth-of-type(2n+1) {
   flex-basis: 400px;
-  background: plum;
+  background: rgb(153, 9, 153);
 }
 
 .story-box-links:nth-of-type(2n) {
@@ -85,4 +88,9 @@ ul {
 
 .story-box-links:nth-of-type(6n) {
   background: aquamarine;
+}
+
+p+button,
+p+button+button {
+  margin: 0 10px;
 }
