@@ -9,6 +9,8 @@ lerna-debug.log*
 
 node_modules
 OriginalApp.jsx
+pageMedium
+/components/ControlButtons.jsx
 dist
 dist-ssr
 *.local

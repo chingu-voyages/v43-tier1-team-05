@@ -42,38 +42,23 @@ function App() {
 	const [active, setActive] = useState(false);
 	const [gameScreen, setGameScreen] = useState(false);
 
+	let swear = [
+		"arse",
+		"ass",
+		"asshole",
+		"bastard",
+		"bitch",
+		"bollocks",
+		"bugger",
+		"bullshit",
+		"crap",
+		"damn",
+		"frigger",
+	];
+
 	function getTextInput(event) {
-		const name = event.target.name;
-		if (name === "adjective") {
-			setText((prev) => ({ ...prev, adjective: [event.target.value] }));
-		} else if (name === "noun") {
-			setText((prev) => ({ ...prev, noun: [event.target.value] }));
-		} else if (name === "food") {
-			setText((prev) => ({ ...prev, food: [event.target.value] }));
-		} else if (name === "bodyPart") {
-			setText((prev) => ({ ...prev, bodyPart: [event.target.value] }));
-		} else if (name === "number") {
-			setText((prev) => ({ ...prev, number: [event.target.value] }));
-		} else if (name === "colour") {
-			setText((prev) => ({ ...prev, colour: [event.target.value] }));
-		} else if (name === "animal") {
-			setText((prev) => ({ ...prev, animal: [event.target.value] }));
-		} else if (name === "year") {
-			setText((prev) => ({ ...prev, year: [event.target.value] }));
-		} else if (name === "adverb") {
-			setText((prev) => ({ ...prev, adverb: [event.target.value] }));
-		} else if (name === "verb") {
-			setText((prev) => ({ ...prev, verb: [event.target.value] }));
-		} else if (name === "place") {
-			setText((prev) => ({ ...prev, place: [event.target.value] }));
-		} else if (name === "fruit") {
-			setText((prev) => ({ ...prev, fruit: [event.target.value] }));
-		} else if (name === "name") {
-			setText((prev) => ({ ...prev, name: [event.target.value] }));
-		} else if (name === "pun") {
-			setText((prev) => ({ ...prev, pun: [event.target.value] }));
-		}
-		// verb conditional
+		const { name, value } = event.target;
+		setText((prevText) => ({ ...prevText, [name]: value }));
 	}
 
 	function resetForm() {

@@ -7,9 +7,6 @@
   font-family: 'Kumbh Sans', sans-serif;
 }
 
-body {
-  background-color: rgba(136, 127, 169, 0.626);
-}
 
 .card {
   padding: 2em;
@@ -67,11 +64,10 @@ ul {
 .story-box-links {
   height: 200px;
   flex: 2 1 200px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 200px;
   text-align: center;
-  margin: 2px;
-  border-radius: 5px;
+  margin: 1px;
 }
 
 /* Temp colours */
@@ -97,5 +93,6 @@ ul {
 p+button,
 p+button+button {
   margin: 0 10px;
-  background: rgb(121, 67, 121);
+  color: #222;
+  font-weight: 700;
 }
