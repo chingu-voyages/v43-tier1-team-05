@@ -42,6 +42,20 @@ function App() {
 	const [active, setActive] = useState(false);
 	const [gameScreen, setGameScreen] = useState(false);
 
+	let swear = [
+		"arse",
+		"ass",
+		"asshole",
+		"bastard",
+		"bitch",
+		"bollocks",
+		"bugger",
+		"bullshit",
+		"crap",
+		"damn",
+		"frigger",
+	];
+
 	function getTextInput(event) {
 		const { name, value } = event.target;
 		setText((prevText) => ({ ...prevText, [name]: value }));
