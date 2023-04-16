@@ -1,5 +1,8 @@
 import React from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
+
+// import ControlButtons from "../components/ControlButtons";
 
 const Easy1 = ({
 	adjective,
@@ -11,9 +14,11 @@ const Easy1 = ({
 	place,
 	getTextInput,
 	active,
+	getStory,
+	resetForm,
 }) => {
 	const style = {
-		color: active ? "black" : "transparent",
+		color: active ? "#333456" : "transparent",
 	};
 
 	return (
@@ -67,6 +72,11 @@ const Easy1 = ({
 				<span> {place}</span> and had <span>{number}</span>{" "}
 				<span>{bodyPart}</span>s.
 			</p>
+			<button onClick={(event) => getStory(event)}>Get story</button>
+			<button onClick={(event) => resetForm(event)}>
+				{" "}
+				<Link to="/stories">New Story!</Link>{" "}
+			</button>
 		</div>
 	);
 };

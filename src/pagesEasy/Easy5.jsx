@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const Easy5 = ({
 	adjective,
@@ -9,6 +10,8 @@ const Easy5 = ({
 	adverb,
 	getTextInput,
 	active,
+	getStory,
+	resetForm,
 }) => {
 	const style = {
 		color: active ? "black" : "transparent",
@@ -57,6 +60,11 @@ const Easy5 = ({
 				<span>{place}</span>. One day, it <span>{verb}</span>{" "}
 				<span>{adverb}</span> and became very <span>{adjective}</span>.
 			</p>
+			<button onClick={() => getStory()}>Get story</button>
+			<button onClick={() => resetForm()}>
+				{" "}
+				<Link to="/stories">New Story!</Link>{" "}
+			</button>
 		</div>
 	);
 };

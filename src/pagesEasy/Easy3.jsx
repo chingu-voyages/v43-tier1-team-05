@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const Easy3 = ({
 	place,
@@ -10,6 +11,8 @@ const Easy3 = ({
 	food,
 	getTextInput,
 	active,
+	getStory,
+	resetForm,
 }) => {
 	const style = {
 		color: active ? "black" : "transparent",
@@ -67,6 +70,11 @@ const Easy3 = ({
 				<span>{adjective}</span> <span>{food}</span> with it, just in case it
 				got hungry..
 			</p>
+			<button onClick={() => getStory()}>Get story</button>
+			<button onClick={() => resetForm()}>
+				{" "}
+				<Link to="/stories">New Story!</Link>{" "}
+			</button>
 		</div>
 	);
 };

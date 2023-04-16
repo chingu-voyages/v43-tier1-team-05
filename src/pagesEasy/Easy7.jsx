@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const Easy7 = ({
 	name,
@@ -10,6 +11,8 @@ const Easy7 = ({
 	verb,
 	getTextInput,
 	active,
+	getStory,
+	resetForm,
 }) => {
 	const style = {
 		color: active ? "black" : "transparent",
@@ -65,6 +68,11 @@ const Easy7 = ({
 				was <span>{adverb}</span> <span>{adjective}</span> and loved to{" "}
 				<span>{verb}</span>.",
 			</p>
+			<button onClick={() => getStory()}>Get story</button>
+			<button onClick={() => resetForm()}>
+				{" "}
+				<Link to="/stories">New Story!</Link>{" "}
+			</button>
 		</div>
 	);
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const Easy9 = ({
 	adjective,
@@ -11,6 +12,8 @@ const Easy9 = ({
 	bodyPart,
 	getTextInput,
 	active,
+	getStory,
+	resetForm,
 }) => {
 	const style = {
 		color: active ? "black" : "transparent",
@@ -75,6 +78,11 @@ const Easy9 = ({
 				<span>{adjective}</span> and had <span>{number}</span>{" "}
 				<span>{bodyPart}</span>s.
 			</p>
+			<button onClick={() => getStory()}>Get story</button>
+			<button onClick={() => resetForm()}>
+				{" "}
+				<Link to="/stories">New Story!</Link>{" "}
+			</button>
 		</div>
 	);
 };

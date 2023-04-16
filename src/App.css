@@ -4,7 +4,11 @@
   padding: 2rem;
   font-size: 18px;
   text-align: center;
-  font-family: "Kumbh Sans";
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  background-color: rgba(136, 127, 169, 0.626);
 }
 
 .card {
@@ -16,15 +20,19 @@
 }
 
 p {
+  font-size: 1.1rem;
   color: transparent;
+  font-family: 'DM Mono', monospace;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 span {
-  color: green;
+  color: #0e0706;
   margin: 0 5px;
-  text-decoration: underline;
-  text-decoration-color: aqua;
+  font-size: 1.2rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  letter-spacing: 2px;
+  text-decoration: underline wavy aqua 2px;
 }
 
 .exclude {
@@ -32,7 +40,7 @@ span {
 }
 
 input[type='text'] {
-  font-size: 18px;
+  font-size: .90rem;
   height: 30px;
   border-radius: 8px;
   text-indent: 20px;
@@ -59,9 +67,35 @@ ul {
 .story-box-links {
   height: 200px;
   flex: 2 1 200px;
-  /* flex-grow: 1; */
-  border: 2px solid black;
+  font-size: 1.2rem;
   line-height: 200px;
   text-align: center;
-  gap: 10px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+/* Temp colours */
+
+.story-box-links:nth-of-type(2n+1) {
+  flex-basis: 400px;
+  background: rgb(32, 3, 32);
+}
+
+.story-box-links:nth-of-type(2n) {
+  background: goldenrod;
+}
+
+.story-box-links:nth-last-of-type(3n +1) {
+  flex-basis: 150px;
+  background: greenyellow;
+}
+
+.story-box-links:nth-of-type(6n) {
+  background: aquamarine;
+}
+
+p+button,
+p+button+button {
+  margin: 0 10px;
+  background: rgb(121, 67, 121);
 }
